@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c353415b05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/cssreset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src='scripts/script.js' defer></script>
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <header><h1>Etch a Sketch</h1></header>
+    <main>
+        <div id="tools">
+            <div id='color-picker'>
+                <label for="color-input"></label>
+                <input type="color" id='color-input'>
+            </div>
+
+            <div class='brush-mode-option active-tool' data-mode='pen' id='normal-pen'><i class="fas fa-pen"></i></div>
+            <div class='brush-mode-option' data-mode='rainbow-pen' id='rainbow-pen'><i class="fas fa-palette"></i></div>
+            <div class='brush-mode-option' data-mode='mouse-pointer' id='mouse-pointer'><i class="fas fa-mouse-pointer"></i></div>
+            <div class='brush-mode-option' data-mode='eraser' id='eraser'><i class="fas fa-eraser"></i></div>
+
+            <div id="canvas-size">
+                <label for="canvas-size-picker" id='canvas-size-display'>10x10</label>
+                <input type="range" id='canvas-size-picker' name='canvas-size' min='1' max='64'>
+            </div>
+            <div id='grid-button'><i class="fas fa-border-all"></i></div>
+            <div id='restart-button'><i class="fas fa-undo-alt"></i></div>
+        </div>
+        <div id="canvas">
+        </div>
+    </main>
+    <footer>
+        <p>Developed by Amir Kooshky <a href="https://github.com/kooshkya100" target='_blank'><i class="fab fa-github"></i></a><a href="https://twitter.com/AKooshky" target='_blank'><i class="fab fa-twitter"></i></a><a href="https://t.me/kooshkya" target='_blank'><i class="fab fa-telegram"></i></a></p>
+    </footer>
+</body>
+</html>
